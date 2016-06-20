@@ -7,6 +7,30 @@
     {{! Page Meta }}
     <title>{{meta_title}}</title>
     <meta name="description" content="{{meta_description}}" />
+    <!-- Facebook Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','//connect.facebook.net/en_US/fbevents.js');
+
+    fbq('init', '254050461429210');
+    fbq('track', "PageView");</script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=254050461429210&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-43568745-18', 'auto');
+    ga('send', 'pageview');
+
+    </script>
 
   <!-- Mobile Specific Metas
   ------------------------- -->
@@ -15,7 +39,11 @@
   <!-- FONT
   ------------------------- -->
 
-
+  <!-- JS
+  ------------------------- -->
+  <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="{{asset "js/bootstrap.min.js"}}"></script>
+  
   <!-- CSS
   ------------------------- -->
   {{! Styles'n'Scripts }}
@@ -23,11 +51,7 @@
   <link rel="stylesheet" type="text/css" href="{{asset "css/skeleton.css"}}" />
   <link rel="stylesheet" type="text/css" href="{{asset "css/custom.css"}}" />
   <link rel="stylesheet" type="text/css" href="{{asset "css/font-awesome.min.css"}}" />
-  
-  <!-- JS
-  ------------------------- -->
-
-  
+  <link rel="stylesheet" type="text/css" href="{{asset "css/bootstrap.min.css"}}" />
 
   <!-- FAVICON
   ------------------------- -->
@@ -36,31 +60,65 @@
   {{ghost_head}}
   </head>
 
-  <!-- BODY
-  ------------------------- -->
+  <header id="header">
+    <div class="container-fluid">
+      <div class="row">
+        <nav class="navbar navbar-static-top" role="navigation">
+        <div class="col-xs-4">
+          <a class="logo" href="https://www.tacklehealth.com/"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 300 70" style="enable-background:new 0 0 300 70;" xml:space="preserve"><g><polygon class="st1" points="0,0 0,2.5 44.9,2.5 44.9,9 27,9 27,67.2 20.4,67.2 20.4,39 17.9,39 17.9,69.6 29.4,69.6 29.4,11.5 47.4,11.5 47.4,0 "/><polygon class="st1" points="47.4,69.6 49.8,69.6 58.8,38.2 56.4,38.2 "/><polygon class="st1" points="63.6,48.1 57.5,69.6 59.9,69.6 65.4,50.6 83.7,50.6 89.1,69.6 91.6,69.6 85.4,48.1 "/><polygon class="st1" points="65.8,40.7 83.3,40.7 74.5,10.1 73.3,14.4 80.1,38.2 66.5,38.2 "/><polygon class="st1" points="81.8,0 67.3,0 66.6,2.5 80,2.5 99.3,69.6 101.7,69.6 "/></g><g><rect x="169.1" y="38.2" class="st1" width="2.5" height="31.4"/><polygon class="st1" points="208.6,0 206.1,0 184.7,36.6 206.1,69.6 208.6,69.6 187.2,36.6 "/><polygon class="st1" points="178.2,33.8 197.9,0 195.4,0 180.6,25.3 180.6,0 169.1,0 169.1,2.5 178.2,2.5"/><polygon class="st1" points="178.2,69.6 180.6,69.6 180.6,46.7 195.4,69.6 197.9,69.6 178.2,39.1 "/></g><polygon class="st1" points="230,58.1 230,0 218.5,0 218.5,2.5 227.5,2.5 227.5,60.6 252.2,60.6 252.2,67.2 220.9,67.2 220.9,38.2 218.5,38.2 218.5,69.6 254.6,69.6 254.6,58.1"/><g><polygon class="st1" points="273.5,58.1 273.5,40.7 292.4,40.7 292.4,29.2 292.4,29.2 292.4,29.2 271.4,29.2 271.4,31.6 289.9,31.6 289.9,38.2 271.1,38.2 271.1,60.6 295.7,60.6 295.7,67.2 264.5,67.2 264.5,38.2 262,38.2 262,69.6 298.2,69.6 298.2,58.1 "/><polygon class="st1" points="262,0 262,2.5 295.7,2.5 295.7,9 271.1,9 271.1,11.5 298.2,11.5 298.2,11.5 298.2,0 298.2,0 "/></g><g><path class="st1" d="M150.9,48.8c-3.6,5.7-9.3,9.3-15.7,9.3c-10.8,0-19.6-10.4-19.6-23.3s8.8-23.3,19.6-23.3c6.4,0,12.1,3.7,15.7,9.3h8V9.4h-2.4C151,3.6,143.5,0,135.3,0v2.5c8,0,15.2,3.6,20.4,9.4h0.8v6.6h-4.2c-4.1-5.7-10.1-9.4-17-9.4c-12.2,0-22.1,11.5-22.1,25.8c0,14.2,9.9,25.8,22.1,25.8c6.3,0,12-3.1,16-8l4.8,4.8c-5.3,6-12.6,9.8-20.8,9.8c-15,0-27.3-12.7-28.8-28.9h-2.2c1.5,17.6,14.9,31.4,31.1,31.4c9.6,0,18.3-4.9,24-12.6L150.9,48.8z"/></g></g></g></svg></a>
+        </div>
+        <div class="col-xs-8">
+          <ul class="navlist navbar">
+            <li class="patients_nav"><a href="/patients"><i class="fa fa-users"></i><span>For Patients</span></a></li>
+            <li class="signin_nav"><a href="https://www.tackleahealth.com/signin"><i class="fa fa-unlock-alt"></i><span>For Providers</span></a></li>
+          </ul>
+        </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- BODY------------------------- -->
       
   <body class="{{body_class}} nav-closed">
 
+    
+
   
-		<div class="container">
+		<div class="container goofball">
 			
 			{{{body}}}
 			
       
 
 
-      <div class="container">
-        <footer id="footer" class="twelve columns">
-		<br />
-		 <br />
-         <section class="copyright"><a href="{{@blog.url}}">{{@blog.title}}</a> <span style="font-size: .8em; font-weight: 600;"><a href="https://creativecommons.org/licenses/by-nc-sa/2.0/">CC BY-NC-SA</a></span> {{date format="YYYY"}}</section>
-		 <a href="https://twitter.com/tackle"><i class="fa fa-twitter" aria-hidden="true"></i></a> <a href="{{@blog.url}}/rss"><i class="fa fa-rss" aria-hidden="true"></i></a>
-		 <br />
-		 <br />
-        </footer>
+      <div class="container center">
+        <div class="twelve columns">
+		      <br />
+		      <br />
+          <section class="copyright"><a href="{{@blog.url}}">{{@blog.title}}</a> <span style="font-size: .8em; font-weight: 600;"><a href="https://creativecommons.org/licenses/by-nc-sa/2.0/">CC BY-NC-SA</a></span> {{date format="YYYY"}}</section>
+		      <a href="https://twitter.com/tackle"><i class="fa fa-twitter" aria-hidden="true"></i></a> <a href="{{@blog.url}}/rss"><i class="fa fa-rss" aria-hidden="true"></i></a>
+		      <br />
+		      <br />
+        </div>
       </div> <!-- end footer div.container -->
-    </div>  <!-- end footer div.table-block -->
+    </div>  <!-- end footer div.table-block goofball -->
+
+    
   
-  {{ghost_foot}}
 </body>
+    <footer id="footer">
+      <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 foot-info">
+                    <span>© Tackle, Inc. 2016</span>
+                    <a href="/about_us">About</a>
+                    <a href="/terms_and_conditions">Terms</a>
+                    <a href="/privacy">Privacy</a>
+                  </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </footer>
 </html>

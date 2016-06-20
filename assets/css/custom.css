@@ -1,57 +1,176 @@
-/* raleway-300 - latin */
+
+
 @font-face {
-  font-family: 'Raleway';
+  font-family: 'Interstate Black';    
+  src: url('../fonts/interbla.ttf');
+  src: local('Interstate Black'), local('Interstate Black'),
+       url('../fonts/interbla.ttf') format('truetype'), /* Safari, Android, iOS */
+  font-weight: normal;
   font-style: normal;
-  font-weight: 300;
-  src: url('../fonts/raleway-v10-latin-300.eot'); /* IE9 Compat Modes */
-  src: local('Raleway Light'), local('Raleway-Light'),
-       url('../fonts/raleway-v10-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/raleway-v10-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/raleway-v10-latin-300.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/raleway-v10-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/raleway-v10-latin-300.svg#Raleway') format('svg'); /* Legacy iOS */
+}
+@font-face {
+  font-family: 'Interstate Bold';    
+  src: url('../fonts/interbol.ttf');
+  src: local('Interstate Bold'), local('Interstate Bold'),
+       url('../fonts/interbol.ttf') format('truetype'), /* Safari, Android, iOS */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Interstate Light';    
+  src: url('../fonts/interlig.ttf');
+  src: local('Interstate Light'), local('Interstate Light'),
+       url('../fonts/interlig.ttf') format('truetype'), /* Safari, Android, iOS */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Interstate Regular';    
+  src: url('../fonts/interreg.ttf');
+  src: local('Interstate Regular'), local('Interstate Regular'),
+       url('../fonts/interreg.ttf') format('truetype'), /* Safari, Android, iOS */
+  font-weight: normal;
+  font-style: normal;
 }
 
-/* raleway-regular - latin */
-@font-face {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../fonts/raleway-v10-latin-regular.eot'); /* IE9 Compat Modes */
-  src: local('Raleway'), local('Raleway-Regular'),
-       url('../fonts/raleway-v10-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/raleway-v10-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/raleway-v10-latin-regular.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/raleway-v10-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/raleway-v10-latin-regular.svg#Raleway') format('svg'); /* Legacy iOS */
+header {
+  padding: 0;
+  position: relative;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#012851+0,000d2d+100 */
+  background: #081710;
+  border-bottom: 2px solid #213e5c;
+  text-align: left;
+  height: 6em; }
+header .logo {
+  margin-top: 1.5em;
+  height: 3em;
+  display: block; }
+header .logo svg {
+  fill: #fff;
+  height: 3em; }
+
+
+header .navlist {
+  margin: 0;
+  padding:0;
+  flex-flow: nowrap;
+  float: right;
+  position: relative;
+  height: 100%; }
+
+header .navlist li {
+  display: block;
+  float: right;
+  border-left: 1px solid #213029;
+  border-right: 1px solid #213029; }
+
+header .navlist li a {
+  padding-top: 1.25em;
+  color: #4781ff;
+  font-family: 'Interstate Light', sans-serif;
+  font-weight: normal;
+  font-size: 1em;
+  line-height: 1em;
+  height: 5.9em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  background: rgba(255,255,255,0);
+  transition: all .2s;
+  -moz-transition: all .2s;
+  -webkit-transition: all .2s;
+  -ms-transition: all .2s; }
+
+header .navlist li i {
+  display: block;
+  font-size: 1.75em;
+  color: #4781ff;
+  margin-bottom: .5em; }
+
+header .navlist li a:hover {
+  background: rgba(255,255,255,.1);
 }
 
-/* raleway-600 - latin */
-@font-face {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 600;
-  src: url('../fonts/raleway-v10-latin-600.eot'); /* IE9 Compat Modes */
-  src: local('Raleway SemiBold'), local('Raleway-SemiBold'),
-       url('../fonts/raleway-v10-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/raleway-v10-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/raleway-v10-latin-600.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/raleway-v10-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/raleway-v10-latin-600.svg#Raleway') format('svg'); /* Legacy iOS */
+header .navlist li .dropdown-menu li {
+float: none;
+text-align: left;
+border: 0;
+display: block; }
+
+header .navlist li .dropdown-menu a {
+  padding: 0;
+  padding: 3px 20px;
+  height: auto;
 }
 
+header .navlist li:first-child {
+  border-right: 2px solid #213029;
+}
+header .navlist li:last-child {
+  border-left: 2px solid #213029;
+}
 
-.container {
-  max-width: 800px; }
+footer {
+  background: #fff;
+  box-shadow: 0px 500px 0px 500px #E6E6E6;
+  border-top: 2px solid #CECECE; }
+
+footer .foot-info {
+  width: 100%;
+  display: block;
+  padding-top: .75em;
+  padding-bottom: 2em;
+  margin: 0 0 0 0;
+  text-align: left; }
+
+footer .foot-info span {
+  margin-right: 2em;
+}
+
+footer .foot-info a {
+  font-size: 1.25em;
+  color: #4880FF;
+  font-family: 'Interstate Regular', sans-serif;
+  font-weight: normal;
+  margin-right: 2em;
+}
+
+.center {
+  text-align: center;
+}
+.container-fluid {
+  padding-right: 2em;
+  padding-left: 2em;
+}
+@media (min-width: 768px) {
+  .container-fluid {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container-fluid {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container-fluid {
+    width: 1170px;
+  }
+}
+p {
+  font-family: 'Interstate Light'
+}
 .header {
   margin-top: 6rem;
   text-align: center; }
   
  /* Navbar */
-  .navbar + .docs-section {
+  .second-navbar + .docs-section {
     border-top-width: 0; }
-  .navbar,
-  .navbar-spacer {
+  .second-navbar,
+  .second-navbar-spacer {
     display: block;
     width: 100%;
     height: 6.5rem;
@@ -59,18 +178,18 @@
     z-index: 99;
     border-top: 1px solid #eee;
     border-bottom: 1px solid #eee; }
-  .navbar-spacer {
+  .second-navbar-spacer {
     display: none; }
-  .navbar > .container {
+  .second-navbar > .container {
     width: 100%; }
-  .navbar-list {
+  .second-navbar-list {
     list-style: none;
     margin-bottom: 0; }
-  .navbar-item {
+  .second-navbar-item {
     position: relative;
     float: left;
     margin-bottom: 0; }
-  .navbar-link {
+  .second-navbar-link {
     text-transform: uppercase;
     font-size: 11px;
     font-weight: 600;
@@ -79,16 +198,16 @@
     text-decoration: none;
     line-height: 6.5rem;
     color: #222; }
-  .navbar-link.active {
+  .second-navbar-link.active {
     color: #33C3F0; }
-  .has-docked-nav .navbar {
+  .has-docked-nav .second-navbar {
     position: fixed;
     top: 0;
     left: 0; }
-  .has-docked-nav .navbar-spacer {
+  .has-docked-nav .second-navbar-spacer {
     display: block; }
   /* Re-overiding the width 100% declaration to match size of % based container */
-  .has-docked-nav .navbar > .container {
+  .has-docked-nav .second-navbar > .container {
     width: 80%; }
 	
 /** Mods **/
@@ -145,6 +264,7 @@
   .entry-media > img {
 	object-fit: cover;
 	max-height: 230px;
+  margin-bottom: 1em;
 	}
   .list-headline a{
 	color: #333;
@@ -155,7 +275,7 @@
 /* Larger than phone */
 @media (min-width: 550px) {
   .header {
-    margin-top: 14rem; }
+    margin-top: 4rem; }
   .value-props {
     margin-top: 9rem;
     margin-bottom: 7rem; }

@@ -4,12 +4,12 @@
 <div class="posts">
       <br /><h2 class="list-headline"><a href="{{url}}">{{{title}}}</a></h2>
 	  {{#if image}}
-		<div class="entry-media">
+		<div class="entry-media center">
 			<img src="{{image}}">
 		</div>
 	  {{else}}
 	  {{/if}}
-      <p>{{excerpt words="106"}}... <a class="read-more" href="{{url}}">read more &raquo;</a>
+      <p>{{excerpt paragraphs="1"}}... <a class="read-more" href="{{url}}">read more &raquo;</a>
 </div>
 
 {{/foreach}}
